@@ -362,7 +362,7 @@ export class A2AClient {
 
     // 1) Try well-known endpoint first
     try {
-      const wellKnownUrl = `${this.baseUrl}/.well-known/agent.json`;
+      const wellKnownUrl = `${this.baseUrl}/.well-known/agent-card.json`;
       const res = await this.fetchImpl(wellKnownUrl, {
         method: "GET",
         headers: { Accept: "application/json" },
